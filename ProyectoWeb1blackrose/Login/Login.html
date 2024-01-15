@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/ProyectoWebUtn2023/Login/Css/Login.css">
+</head>
+<body style="background-color: #000000;">
+    
+    <div class="container">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="elegir"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Iniciar sesion</button>
+                <button type="button" class="toggle-btn" onclick="registrar()">Registrar</button>
+            </div>
+            <div class="redes-sociales">
+                <img src="/ProyectoWebUtn2023/Login/ImagenesLogin/LogoFace.jfif" alt="Imagen-FaceBook">
+                <img src="/ProyectoWebUtn2023/Login/ImagenesLogin/LogoTwiter.png" alt="Imagen-Twiter">
+                <img src="/ProyectoWebUtn2023/Login/ImagenesLogin/ImagenDeGoogle.jfif" alt="Imagen-Google">
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Nombre de Usuario" required>
+                <input type="password" class="input-field" placeholder="Contraseña" required>
+                <input type="checkbox" class="check-box"> <span>Recordar Contraseña</span>
+                <!-- ABOTON PARA REACCION A LA PAGINA INICIAL -->
+                <a href="/ProyectoWebUtn2023/index.html" style=" text-decoration:none; color:#060606;"><button type="button" class="btn btn-primary toggle-btn submit-btn" 
+                    style="background-color: 
+                    #000000;
+                    border-radius: 20px;
+                    color: #fff; ">Acceder</button></a>
+            </form>
+            <form id="registrar" class="input-group">
+                <input type="text" class="input-field" placeholder="Nombre de Usuario" required>
+                <input type="email" class="input-field" placeholder="Correo" required>
+                <input type="password" class="input-field" placeholder="Contraseña" required>
+                <input type="checkbox" class="check-box"> <span>Acepto los terminos y condiciones</span>
+
+              <form>
+                <!-- ABOTON PARA REACCION A LA PAGINA INICIAL -->
+                <a href="/ProyectoWebUtn2023/index.html" style=" text-decoration:none; color:#000000;"><button type="button" class="btn btn-primary toggle-btn submit-btn" 
+                 style="background-color: 
+                 #000000;
+                 border-radius: 20px;
+                 color: #fff; ">Registrate</button></a>
+
+
+              </form>
+
+                
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("registrar");
+        var z = document.getElementById("elegir");
+
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+
+        function registrar(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "120px";
+        }
+    </script>
+
+</body>
+</html>

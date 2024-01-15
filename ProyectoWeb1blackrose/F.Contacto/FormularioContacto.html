@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacto-BlackRose|Formulario</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/ProyectoWebUtn2023/F.Contacto/Css/main.css">
+    <link rel="stylesheet" href="/ProyectoWebUtn2023/Header/Header.css">
+    <link rel="stylesheet" href="/ProyectoWebUtn2023/Footer/footer.css">
+
+    <!-- GOOGLE FONTs -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <!--ENLACE DE PARA QUE EL CARRITO DE COMPRA FONTS-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+</head>
+
+
+<!--TODO EL FORMULARIO REALIZADO COMIENZA AQUI-->
+
+<body>
+    <script>
+        $(function(){
+          $("#header").load("/ProyectoWebUtn2023/Header/header.html");
+        });
+      </script>
+      <div id="header"></div>
+
+      <br>
+
+
+    <div class="content">
+
+        <div class="LogoBlackRose" >
+            <!--    <img src="/F.Contacto/imagenFormulario/BRS_LOGO1.png" alt="Logo BlackRose"> -->
+          </div>
+
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+                <h3>Medio de Contacto</h3>
+
+                <form action="">
+                    <p>
+                        <label>Nombre Completo</label>
+                        <input type="text" name="fullname">
+                    </p>
+                    <p>
+                        <label>Correo Electronico</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label>Numero de telefono</label>
+                        <input type="tel" name="phone">
+                    </p>
+                    <p>
+                        <label>Pedido</label>
+                        <input type="text" name="affair">
+                    </p>
+                    <p class="block">
+                       <label>Escriba su mensaje</label> 
+                        <textarea name="message" rows="3"></textarea>
+                    </p>
+
+
+
+                    <!--BOTONES CON ACCIONES, PARA QUE SE GUIEN-->
+                    <p class="block">
+                        <a class="btn-Volver" href="">ENVIAR</a>
+                    </p>
+
+                    <p class="block">
+                        <a class="btn-Volver" href="/ProyectoWebUtn2023/index.html">VOLVER</a>
+                    </p>
+
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h4>Conctactanos</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Costa Rica</li>
+                    <li><i class="fas fa-phone"></i> 2668-4436 ,+506-6286-4590</li>
+                    <li><i class="fas fa-envelope-open-text"></i> BlackRose@gmail.com</li>
+                </ul>
+                <p>Hola, bienvenidos. Por este medio nosotros vamos a estar en contacto contigo.
+                    llena todo el formulario y nosotros estaremos respondiendote al instante, arriba
+                    encuentras informacion con la que nos puedes contactar.
+                </p>
+                <p>BlackRose.com</p>
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+    <script>
+        $(function(){
+          $("#footer").load("/ProyectoWebUtn2023/Footer/footer.html");
+        });
+      </script>
+      <div id="footer"></div>
+
+
+<!--William coloco este footer aqui es del FormularioContacto-->
+
+
+
+
+
+
+
+
+
+</html>
